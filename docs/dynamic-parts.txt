@@ -1,2 +1,13 @@
 - Number next to "Things to do"
 - Content of Tag list table (new elements to be added dynamically from the input text field into new row of main table)
+
+Potential Issues:
+- Duplicated items
+- Long list difficult to organise/scan through (add categories when adding new item)
+- Keeping completed tasks (for a week? a month?) before deleting them permanently
+- Set Undo button if task was deleted by mistake
+
+New Potential Features:
+- Set recurring tasks (ie. add "check emails" tasks every Monday at 9am)
+- Add speech-to-text function (speech recognition API only supported by Chrome and Opera https://caniuse.com/#search=speech%20recognition)
+- Drag-and-drop functionality
