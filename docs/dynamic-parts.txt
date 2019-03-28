@@ -1,0 +1,2 @@
+- Number next to "Things to do"
+- Content of Tag list table (new elements to be added dynamically from the input text field into new row of main table)
