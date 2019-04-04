@@ -15,10 +15,8 @@ h1 {
     font-size: 3em;
     font-weight: normal;
     font-family: 'Fredoka One';
-    background: -webkit-linear-gradient(rgb(255, 81, 0), rgb(102, 7, 7));
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: crimson;
+    text-transform: uppercase;
 }
 
 table {
@@ -46,9 +44,9 @@ input#inputText:focus {
 }
 
 button#addTask {
-    border: .15em solid rgb(3, 0, 168);
+    border: .15em solid crimson;
     background-color: white;
-    color: rgb(3,0,168);
+    color: crimson;
 
     margin-left: .5em;
 
@@ -58,8 +56,15 @@ button#addTask {
 }
 
 button#addTask:hover {
-    background-color: rgb(3,0,168);
+    background-color: crimson;
     color: white;
    
     transition: all .2s;
+}
+
+div#task-list {
+    border: 1px solid black;
+    border-radius: 10%;
+    margin: 2em 18em;
+    padding: 2em;
 }
