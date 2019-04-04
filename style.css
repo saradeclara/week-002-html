@@ -168,9 +168,10 @@ td:hover {
 }
 
 #counters {
-    padding: 2em;
-    background-color: var(--primary-color)
+    background-color: var(--primary-color);
     /* border: 1px solid black; */
+    /* TODO
+    clear floats after counters section */
 }
 
 #counters li {
