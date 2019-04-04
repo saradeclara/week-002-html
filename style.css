@@ -95,6 +95,7 @@ input[type='text']:focus {
     display: block;
     font-size: 1rem;
     border: 0px;
+    border-radius: .3em;
     height: 2em;
     margin: .8em auto;
     padding: 0 1em;
@@ -164,4 +165,25 @@ td:hover {
 
 .done {
     text-decoration: line-through;
+}
+
+#counters {
+    padding: 2em;
+    background-color: var(--primary-color)
+    /* border: 1px solid black; */
+}
+
+#counters li {
+    list-style-type: none;
+    display: inline;
+}
+
+#counters li:nth-child(1) {
+    float: left;
+    margin-left: 5em;
+}
+
+#counters li:nth-child(2) {
+    float: right;
+    margin-right: 5em;
 }
