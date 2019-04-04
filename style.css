@@ -3,6 +3,11 @@
     --primary-color: crimson;
     --main-bg: #f8f8f8;
     --primary-hover: rgb(189, 15, 49);
+    --row-color: rgb(230, 230, 230);
+    --row-hover: rgb(212, 212, 212);
+    --placeholder-color: rgb(167, 167, 167);
+    --row-font-color: darkslategrey;
+    --row-font-color-hover: black;
 }
 
 * {
@@ -63,6 +68,7 @@ h1 {
 }
 
 input[type='text'] {
+    font-size: 1rem;
     border: 0px;
     width: 10em;
     height: 2em;
@@ -86,8 +92,11 @@ input[type='text']:focus {
 }
 
 #input > button {
+    display: block;
+    font-size: 1rem;
     border: 0px;
     height: 2em;
+    margin: .8em auto;
     padding: 0 1em;
     
     background-color: var(--primary-color);
@@ -102,7 +111,57 @@ input[type='text']:focus {
 }
 
 input::placeholder {
-    color: rgb(167, 167, 167);   
+    color: var(--placeholder-color); 
     text-align: center; 
 }
 
+#task-list {
+    margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: .8em;
+    background-color: var(--row-color);
+    width: auto;
+    border: .5em solid var(--main-bg);
+    color: var(--row-font-color);
+    cursor: pointer;
+    transition: all .3s;
+}
+
+td:hover {
+    background-color: var(--row-hover);
+    color: var(--row-font-color-hover);
+    transition: all .3s;
+}
+
+#task-list .fa-circle, .fa-check-circle {
+    margin-right: .3em;
+}
+
+.icons {
+    display: inline;
+}
+
+.fa-minus-circle {
+    float: right;
+    margin-right: .7em;
+    transition: all .3s;
+}
+
+.fa-minus-circle:hover {
+    color: red;
+    transition: all .3s;
+}
+
+.done {
+    text-decoration: line-through;
+}
