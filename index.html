@@ -2,21 +2,34 @@
 
 <head>
     <title>My ToDo Application</title>
+    <!-- <style>
+        h1 {
+            color: rgb(0, 255, 0);
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style> -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>My ToDo Application</h1>
+    <h1> My ToDo List</h1>
+
     <input type="text" name="addItem" id="addItem">
     <button type="submit">Add</button>
     <p>Things to do: 2</p>
     <table>
-        <tr>
+        <tr class="task-row">
             <td>A first task</td>
             <td><button type="submit">Done</button></td>
             <td><button type="submit">Delete</button></td>
         </tr>
-        <tr>
+        <tr class="task-row" id="middle-row">
             <td>A second task</td>
+            <td><button type="submit">Done</button></td>
+            <td><button type="submit">Delete</button></td>
+        </tr>
+        <tr class="task-row">
+            <td>A third task</td>
             <td><button type="submit">Done</button></td>
             <td><button type="submit">Delete</button></td>
         </tr>

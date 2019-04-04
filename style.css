@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One|Lato:400,900');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato';
+    text-align: center;
+}
+
+h1 {
+    padding: .5em;
+    font-size: 3em;
+    font-weight: normal;
+
+    font-family: 'Fredoka One';
+
+    background: -webkit-linear-gradient(rgb(255, 81, 0), rgb(102, 7, 7));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+table {
+    margin: 0 auto;
+}
