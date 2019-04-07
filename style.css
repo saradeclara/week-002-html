@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Fredoka+One|Lato:400,900');
 :root {
-    --primary-color: crimson;
+    --primary-color: rgb(220, 20, 60);
     --main-bg: #f8f8f8;
     --primary-hover: rgb(189, 15, 49);
     --row-color: rgb(230, 230, 230);
@@ -61,6 +61,7 @@ h1 {
     font-size: 3.5em;
     color: var(--primary-color);
     text-shadow: 2px 1px 1px rgba(0,0,0,.23);
+    margin-top: 1em;
 }
 
 #input {
@@ -87,6 +88,7 @@ input[type='text'] {
 input[type='text']:focus {
     width: 18em;
     color: darkslategray;
+    background-color: rgba(220, 20, 60, .1);
     border-bottom: 0.1em solid var(--primary-color);
     transition: all .3s;
 }
