@@ -17,6 +17,63 @@
     padding: 0;
 }
 
+.list-group {
+    cursor: pointer;
+}
+
+.buttons {
+    font-size: 1.5rem;
+}
+
+.fa-check-square:hover, .fa-trash:hover {
+    color: black;
+}
+/* 
+.background {
+    background: url(img.jpg);
+    background-position: bottom center;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    z-index: -5;
+    position: absolute;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.4);
+    z-index: -1;
+} */
+
+h1 {
+    font-family: 'Fredoka One';
+    text-shadow: 2px 1px 1px rgba(0, 0, 0, .23);
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-family: 'Fredoka One';
+}
+
+#addTasksForm label {
+    font-size: .9rem;
+    font-weight: bold;
+    color: var(--danger);
+}
+
+.form-check {
+    margin: 1rem 0;
+}
+
+
+/* 
+input::placeholder, .custom-select{
+    color: var(--placeholder-color);
+    text-align: center;
+} */
+/* 
 body {
     display: flex;
     justify-content: center;
@@ -145,7 +202,7 @@ td {
     background-color: var(--row-color);
     width: auto;
     /* border: .5em solid var(--todays-tasks-bg); */
-    color: var(--row-font-color);
+    /* color: var(--row-font-color);
     cursor: pointer;
     transition: all .3s;
 }
@@ -219,7 +276,7 @@ td:hover {
 
 td>p {
     display: inline;
-}
+} */ 
 
 /* @media only screen and (max-width: 600px) {
     h1 {

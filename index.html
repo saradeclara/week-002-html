@@ -4,68 +4,137 @@
     <title>My ToDo List</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="background"></div>
     <div class="overlay"></div>
-    <div id="task-app">
-        <h1>
+    <div class="container w-100 mt-5 p-5 bg-white shadow-lg rounded">
+        <h1 class="text-center text-danger text-uppercase">
             <i class="far fa-check-circle"></i>
             My todo list</h1>
-        <div id="input">
+        <form id="addTasksForm" class="w-75 mx-auto my-5">
+
+            <div class="form-group">
+                <label for="inputTask">Add your task</label>
+                <input type="text" class="form-control" id="inputTask" placeholder="">
+            </div>
+            <div class="form-group">
+                <label for="inputState">Category</label>
+                <select id="inputState" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>Shopping</option>
+                    <option>Work</option>
+                    <option>Hobbies</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="inputState">Priority</label>
+                <select id="inputState" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>High Priority</option>
+                    <option>Normal Priority</option>
+                    <option>Low Priority</option>
+                </select>
+            </div>
+
+
+            <div class="col-xs-4 text-center">
+                <button type="submit" class="btn btn-danger my-3">Submit</button>
+
+            </div>
+        </form>
+
+        <div class="dropdown-divider"></div>
+
+        <!-- <div id="input">
             <input type="text" name="addItem" id="addItem" placeholder="ie. buy some milk">
             <button type="submit">Add Task</button>
-        </div>
-
+        </div> -->
         <div id="todays-tasks">
-            <h2>Today's tasks</h2>
+            <h2 class="text-center text-danger text-uppercase my-4">Today's tasks</h2>
 
-            <div id="counters">
-                <ul>
-                    <li><span class="highlighted-text">2</span> Pending Tasks</li>
-                    <li><span class="highlighted-text">1</span> Completed Task</li>
-                </ul>
-            </div>
+            <div class="list-group w-75 mx-auto">
+                <a href="#" class="list-group-item list-group-item-action">
+                    <li class="d-flex justify-content-between align-items-center">
+                            <div>
+                                    <h5 class="mb-1">Go to Post Office</h5>
+                                  
+                                  <p class="mb-1">
+                                        <span class="badge badge-danger">High Priority</span>
+                                  </p>
+                                  <p class="category mb-0 small"><span class="badge badge-pill badge-dark">Life</span>
+                                    <span class="badge badge-pill badge-dark">Work</span>
+            
+                                  </p>
+                                </div>
+                                <div class="buttons">
+                                        <i class="far fa-check-square mr-2"></i>
 
-            <div id="task-list">
-                <table>
-                    <tr>
-                        <td>
-                            <div class="icons">
-                                <i class="far fa-circle"></i>
-                                <i class="far fa-check-circle"></i>
-                            </div>
-                            <p>Complete Week 3 JavaScript challanges</p>
-                            <i class="fas fa-minus-circle"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="icons">
-                                <i class="far fa-circle"></i>
-                                <i class="far fa-check-circle"></i>
-                            </div>
-                            <p class="done">Go To Post Office</p>
-                            <i class="fas fa-minus-circle"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="icons">
-                                <i class="far fa-circle"></i>
-                                <i class="far fa-check-circle"></i>
-                            </div>
-                            <p>Meet with Claudia at 3pm</p>
-                            <i class="fas fa-minus-circle"></i>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
+                                        <i class="fa fa-trash" aria-hidden="true"></i>
 
-    </div>
+                                </div>
+                    </li>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                        <li class="d-flex justify-content-between align-items-center">
+                                <div>
+                                        <h5 class="mb-1">Complete Week 4 JS challenges</h5>
+                                      
+                                      <p class="mb-1">
+                                            <span class="badge badge-warning">Normal Priority</span>
+                                      </p>
+                                      <p class="category mb-0 small"><span class="badge badge-pill badge-dark">Life</span>
+                                        <span class="badge badge-pill badge-dark">Work</span>
+                
+                                      </p>
+                                    </div>
+                                    <div class="buttons">
+                                            <i class="far fa-check-square mr-2"></i>
+    
+                                            <i class="fa fa-trash" aria-hidden="true"></i>
+    
+                                    </div>
+                        </li>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                            <li class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                            <h5 class="mb-1">Return Books to Library</h5>
+                                          
+                                          <p class="mb-1">
+                                                <span class="badge badge-info">Low Priority</span>
+                                          </p>
+                                          <p class="category mb-0 small"><span class="badge badge-pill badge-dark">Hobbies</span>
+                                            
+                    
+                                          </p>
+                                        </div>
+                                        <div class="buttons">
+                                                <i class="far fa-check-square mr-2"></i>
+        
+                                                <i class="fa fa-trash" aria-hidden="true"></i>
+        
+                                        </div>
+                            </li>
+                        </a>
+                   
+                
+                   
+                       
+                
+                  </div>
+                </div>
+                </div>
+
+                <footer class="text-center my-5">
+                        created by 
+                        <span class="font-weight-bold">Sara De Clara</span>
+
+                </footer>
 
 </body>
 
