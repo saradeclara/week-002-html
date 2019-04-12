@@ -3,11 +3,11 @@
 
 :root {
     --primary-color: rgb(220, 20, 60);
-    --main-bg: #f8f8f8;
+    --main-bg: rgb(238, 237, 237);
     --primary-hover: rgb(189, 15, 49);
     --primary-dark: rgb(107, 10, 30);
     --row-color: rgb(230, 230, 230);
-    --row-hover: rgb(212, 212, 212);
+    --row-hover: rgb(240, 240, 240);
     --placeholder-color: rgb(167, 167, 167);
     --row-font-color: darkslategrey;
     --row-font-color-hover: black;
@@ -18,11 +18,14 @@
     padding: 0;
 }
 
+body {
+    font-family: 'Lato';
+}
+
 nav.navbar {
     display: relative;
     background-color: var(--primary-color);
     color: white;
-    box-shadow: 2px 2px 10px rgba(0,0,0,.7);
     z-index: 0;
 }
 
@@ -32,7 +35,7 @@ nav h1 {
     font-size: 1.7rem;
 }
 
-.fa-check-circle {
+h1 > i.fa-check-circle {
     color: var(--primary-dark);
     font-weight: bold;
 }
@@ -47,10 +50,6 @@ i {
 }
 
 
-nav button i{
-    font-size: 1rem;
-}
-
 .right-corner i:hover {
     color: black;
     cursor: pointer;
@@ -58,5 +57,50 @@ nav button i{
 
 div.container-fluid {
     position: relative;
-    z-index: -10000;
+    z-index: 0;
+}
+
+
+nav.sidebar {
+    box-shadow: 1px 1px 15px black;
+    position: relative;
+    background-color: rgb(253, 253, 253) !important;
+}
+
+div.main {
+    background-color: var(--main-bg);
+    position: relative;
+    z-index: -3;
+}
+
+
+ul{
+    list-style-type: none;
+}
+
+
+ul.first-level > li {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+li > h2 {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+ul.second-level li {
+    cursor: pointer; 
+    margin: .5rem 0rem;   
+    padding: .5rem 0rem;
+    color: rgb(160, 158, 158);
+}
+
+ul.second-level li:hover {
+    color: black;
+    background-color: var(--row-hover);
+
 }
