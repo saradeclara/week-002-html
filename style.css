@@ -1,11 +1,13 @@
+/* Importing Google Fonts */
 @import url('https://fonts.googleapis.com/css?family=Fredoka+One|Lato:400,900');
 
-
+/* Colours */
 :root {
     --primary-color: rgb(220, 20, 60);
     --main-bg: rgb(238, 237, 237);
     --primary-hover: rgb(189, 15, 49);
     --primary-dark: rgb(107, 10, 30);
+    --primary-light: rgb(255, 192, 205);
     --row-color: rgb(230, 230, 230);
     --row-hover: rgb(240, 240, 240);
     --placeholder-color: rgb(167, 167, 167);
@@ -13,15 +15,18 @@
     --row-font-color-hover: black;
 }
 
+/* Resetting Margin and Padding */
 * {
     margin: 0;
     padding: 0;
 }
 
+/* Content */
 body {
     font-family: 'Lato';
 }
 
+/* Navbar */
 nav.navbar {
     display: relative;
     background-color: var(--primary-color);
@@ -40,26 +45,38 @@ h1 > i.fa-check-circle {
     font-weight: bold;
 }
 
+.fa-bars {
+    cursor: pointer;
+}
+
 i {
     margin-left: 0rem;
     font-size: 1.5rem;
 }
 
-.nav-left-corner {
-    border: 1px solid black;
+/* Navbar - Right Corner Icons */
+
+.right-corner i {
+    font-size: 1rem;
+    transition: all .5s;
 }
-
-
 .right-corner i:hover {
-    color: black;
     cursor: pointer;
+    transition: all .5s;
 }
+
+/* Container */
 
 div.container-fluid {
     position: relative;
     z-index: 0;
 }
 
+/* Container - Sidebar */
+
+ul {
+    list-style-type: none;
+}
 
 nav.sidebar {
     box-shadow: 1px 1px 15px black;
@@ -67,6 +84,12 @@ nav.sidebar {
     background-color: rgb(253, 253, 253) !important;
 }
 
+ul.first-level li h2 i {
+    font-size: 1.3rem;
+    margin-right: 1rem;
+}
+
+/* Container - Main */
 div.main {
     background-color: var(--main-bg);
     position: relative;
@@ -74,9 +97,7 @@ div.main {
 }
 
 
-ul{
-    list-style-type: none;
-}
+
 
 
 ul.first-level > li {
@@ -90,7 +111,15 @@ li > h2 {
     font-size: 1rem;
     font-weight: bold;
 }
+ul.first-level li {
+    padding: .9rem 0rem .5rem .7rem;
+    color: var(--primary-color);
+    cursor: pointer;
+}
 
+ul.first-level li:hover {
+   background-color: var(--row-hover);
+}
 
 ul.second-level li {
     cursor: pointer; 
@@ -99,8 +128,17 @@ ul.second-level li {
     color: rgb(160, 158, 158);
 }
 
+ul.second-level li span {
+    margin-left: 2rem;
+}
+
+hr {
+    margin: .5rem;
+    padding: 0;
+}
+
 ul.second-level li:hover {
-    color: black;
+    color: darkslategrey;
     background-color: var(--row-hover);
 
 }
