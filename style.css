@@ -89,6 +89,10 @@ ul.first-level li h2 i {
     margin-right: 1rem;
 }
 
+ul.second-level li span i {
+    margin-right: 2rem;
+}
+
 /* Container - Main */
 div.main {
     background-color: var(--main-bg);
