@@ -193,11 +193,15 @@ div.main h2 {
     padding: .7rem;
     border-radius: .6rem;
     box-shadow: 1px 1px 3px rgba(0,0,0,.1);
-    font-size: 1rem;
+    font-size: .9rem;
 }
 
 .main-tasks li i.fa-circle, .main-tasks li i.fa-trash, .main-tasks li i.fa-check-circle {
     font-size: 1rem;
+}
+
+.main-tasks ul li span {
+    margin: 0rem .6rem;
 }
 
 
