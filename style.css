@@ -29,6 +29,10 @@ body {
 }
 
 /* Bottom Navbar - hidden by default, mobile view only */
+
+.fixed-bottom {
+    display: none;
+}
 /* .fixed-bottom {
     background-color: var(--sidebar-bg) !important;
     width: 100vw;
@@ -288,7 +292,28 @@ input[type=text]::placeholder {
 
 /* Bootstrap Responsive Breakpoints */
 /* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 767px) { 
+@media (max-width: 767px) {
+    .fixed-bottom {
+        display: inline;
+    }
+    .right-corner {
+        display: none !important;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .main > .row h2 {
+        display: none;
+    }
+
+    div.row.mt-4 {
+        margin-top: 1.5rem !important;
+    }
+    .main {
+        padding: 1rem !important;
+    }
     /* .fixed-bottom {
         display: block;
     }
