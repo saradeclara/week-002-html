@@ -29,16 +29,16 @@ body {
 }
 
 /* Bottom Navbar - hidden by default, mobile view only */
-.fixed-bottom {
+/* .fixed-bottom {
     background-color: var(--sidebar-bg) !important;
     width: 100vw;
     display: flex;
     justify-content: center;
     display: none;
+    padding: 0rem;
 }
 
 .fixed-bottom ul {
-    padding: .5rem;
     width: 98vw;
     margin-bottom: 0rem;
     display: flex;
@@ -65,13 +65,14 @@ i.fa-plus-circle:hover {
     color: var(--primary-hover) !important;
 
 }
-
+ */
 
 /* Navbar */
 nav.navbar {
     display: relative;
     background-color: var(--primary-color);
     color: white;
+    width: 100%;
 }
 
 nav h1 {
@@ -288,7 +289,7 @@ input[type=text]::placeholder {
 /* Bootstrap Responsive Breakpoints */
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 767px) { 
-    .fixed-bottom {
+    /* .fixed-bottom {
         display: block;
     }
     .sidebar {
@@ -326,7 +327,7 @@ input[type=text]::placeholder {
 
     .main-tasks > div h3, .main-tasks > div i {
         font-size: 1.5rem;
-    }
+    } */
  }
 
 /* // Medium devices (tablets, 768px and up) */
