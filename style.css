@@ -14,6 +14,7 @@
     --row-font-color: darkslategrey;
     --row-font-color-hover: black;
     --sidebar-bg:  rgb(253, 253, 253);
+    --muted: rgb(199, 199, 199);
 }
 
 /* Resetting Margin and Padding */
@@ -27,6 +28,45 @@ body {
     font-family: 'Lato';
 }
 
+/* Bottom Navbar - hidden by default, mobile view only */
+.fixed-bottom {
+    background-color: var(--sidebar-bg) !important;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+
+.fixed-bottom ul {
+    padding: .5rem;
+    width: 98vw;
+    margin-bottom: 0rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fixed-bottom li i {
+    font-size: 1rem;
+    color: var(--muted);
+    cursor: pointer;
+}
+
+.fixed-bottom li i:hover {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+i.fa-plus-circle {
+    font-size: 2.2rem !important;
+    color: var(--primary-color) !important;
+}
+
+i.fa-plus-circle:hover {
+    color: var(--primary-hover) !important;
+
+}
+
+
 /* Navbar */
 nav.navbar {
     display: relative;
@@ -38,6 +78,7 @@ nav h1 {
     font-family: 'Fredoka One';
     text-transform: uppercase;
     font-size: 1.7rem;
+    margin-bottom: 0;
 }
 
 h1 > i.fa-check-circle {
@@ -174,17 +215,19 @@ div.main h2 {
 .main-tasks > div {
     background-color: var(--sidebar-bg);
     margin: 0rem 0rem 2rem 0rem;
-    padding: 1.7rem;
+    padding: 1.5rem 1.2rem;
 }
 
 .main-tasks h3 {
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
+
 }
 
 .main-tasks h3 i {
-    font-size: 1.7rem
+    font-size: 1.5rem;
+
 }
 
 .main-tasks li {
@@ -197,11 +240,11 @@ div.main h2 {
 }
 
 .main-tasks li i.fa-circle, .main-tasks li i.fa-trash, .main-tasks li i.fa-check-circle {
-    font-size: 1rem;
+    font-size: .9rem;
 }
 
 .main-tasks ul li span {
-    margin: 0rem .6rem;
+    margin: 0rem 1rem;
 }
 
 
@@ -223,7 +266,7 @@ input[type=text]::placeholder {
     }
 
 .input-group-text i {
-    font-size: 1rem;
+    font-size: .9rem;
 }
 
 .add-new-task {
@@ -243,11 +286,40 @@ input[type=text]::placeholder {
 }
 
 /* Bootstrap Responsive Breakpoints */
-/* // Extra small devices (portrait phones, less than 576px)
-// No media query for `xs` since this is the default in Bootstrap */
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 767px) { 
+    .fixed-bottom {
+        display: block;
+    }
+    .sidebar {
+        display: none;
+    }
+  
+    .right-corner {
+        display: none !important;
+    }
 
-/* // Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) { 
+    .main {
+        padding: 0px !important;
+    }
+
+   .main .row h2 {
+       display: none;
+   }
+
+   div.row.mt-4 {
+       margin-top: 1rem !important;
+   }
+
+    div.border.shadow.rounded {
+       border-width: 0rem !important;
+       box-shadow: 0rem 0rem 0rem black !important;
+       margin-bottom: 0rem;
+   }
+
+   div.border.shadow.rounded > h3, div.border.shadow.rounded > h3 i {
+       font-size: 1.5rem;
+   }
     .main-tasks > div {
         padding: 2rem;
     }
@@ -258,7 +330,7 @@ input[type=text]::placeholder {
  }
 
 /* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
+/* @media (max-width: 768px) { 
     .main-tasks > div {
         padding: 1rem .8rem;
     }
@@ -304,10 +376,10 @@ input[type=text]::placeholder {
     ul.second-level li span {
         font-size: .8rem;
     }
- }
+ } */
 
 /* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
+@media (max-width: 992px) { 
     .main-tasks > div {
         padding: 1rem .8rem;
     }
@@ -359,39 +431,5 @@ input[type=text]::placeholder {
  }
 
 /* // Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-    .main-tasks > div h3, .main-tasks > div i {
-        font-size: 1.4rem;
-    }
-
-    .main-tasks > div li {
-        font-size: .9rem;
-    }
-
-    .main-tasks > div i {
-        font-size: .9rem;
-    }
-
-    .main-tasks > div {
-        padding: 1.5rem 1.2rem;
-    }
-
-    .main-tasks ul li span {
-        margin: 0rem 1rem;
-    }
-
-    input[type=text], .input-group-text {
-        border-radius: 8rem;
-        font-size: .9rem;
-    }
-    
-    input[type=text]::placeholder {
-        border-color: rgb(201,201,201);
-        color: rgb(201, 201, 201);
-        font-size: .9rem;
-        }
-    
-    .input-group-text i {
-        font-size: .9rem;
-    }
- }
+/* @media (min-width: 1200px) {
+ } */
