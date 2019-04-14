@@ -293,16 +293,56 @@ input[type=text]::placeholder {
 /* Bootstrap Responsive Breakpoints */
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 767px) {
+
+    /* Bottom Navbar */
     .fixed-bottom {
         display: inline;
+        background-color: var(--sidebar-bg) !important;
+
     }
+
+    .fixed-bottom ul {
+        margin-bottom: 0rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .fixed-bottom ul li {
+        padding: .3rem;
+    }
+
+    .fixed-bottom i {
+        font-size: 1rem;
+        color: var(--muted);
+    }
+
+    .fixed-bottom i:hover {
+        cursor: pointer;
+        color: rgba(0,0,0,.7);
+    }
+
+    .fixed-bottom i.fa-plus-circle {
+        font-size: 2rem;
+        color: var(--primary-color);
+        text-shadow: 1px 1px 2px rgba(0,0,0,.2);
+    }
+
+    .fixed-bottom i.fa-plus-circle:hover {
+        color: var(--primary-hover);
+    }
+
+    /* Navbar */
     .right-corner {
         display: none !important;
     }
 
+    /* Sidebar */
     .sidebar {
         display: none;
     }
+
+    /* Container-Fluid */
 
     .main > .row h2 {
         display: none;
