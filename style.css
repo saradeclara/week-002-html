@@ -28,6 +28,12 @@ body {
     font-family: 'Lato';
 }
 
+/* Mobile Sidebar - hidden by default, mobile view only */
+
+nav.mobile-sidebar {
+    display: none;
+}
+
 /* Bottom Navbar - hidden by default, mobile view only */
 
 .fixed-bottom {
@@ -376,6 +382,9 @@ input[type=text]::placeholder {
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 767px) {
     /* Mobile Sidebar */
+    nav.mobile-sidebar {
+        display: inline;
+    }
     div.row.mt-5 {
         position: relative;
         top: .5rem;
@@ -603,21 +612,22 @@ input[type=text]::placeholder {
  @media (max-width: 670px) { 
     div.row.mt-5 {
        position: relative;
-       top: 1.3rem;
+       top: -.2rem;
     }
+    
 }
 
-@media (max-width: 500px) { 
+@media (max-width: 550px) { 
     div.row.mt-5 {
        position: relative;
-       top: .2rem;
+       top: -.8rem;
     }
 }
 
  @media (max-width: 425px) { 
      div.row.mt-5 {
         position: relative;
-        top: -1rem;
+        top: -.5rem;
      }
      .right-corner img {
         width: 35%;
@@ -627,7 +637,7 @@ input[type=text]::placeholder {
  @media (max-width: 375px) { 
     div.row.mt-5 {
        position: relative;
-       top: -1rem;
+       top: -.8rem;
     }
     .right-corner img {
         width: 35%;
