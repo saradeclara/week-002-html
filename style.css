@@ -202,9 +202,9 @@ div.main {
 div.main p {
     margin: 0rem;
 }
-div.main .badge {
+/* div.main .badge {
     margin: 0rem 2rem;
-}
+} */
 
 div.main h2 {
     font-weight: bold;
@@ -218,6 +218,10 @@ div.main h2 {
 
 .main-tasks > div i {
     cursor: pointer;
+}
+
+body > div.container-fluid > div > div > div.row.mt-4 > div > div > ul > li > span {
+    margin: 0rem 1rem;
 }
 
 .main-tasks h3 {
@@ -245,10 +249,10 @@ div.main h2 {
     font-size: .9rem;
 }
 
-.main-tasks ul li span {
+/* .main-tasks ul li span {
     margin: 0rem 1rem;
 }
-
+ */
 
 
 
@@ -318,9 +322,9 @@ input[type=text]::placeholder {
         padding: 1.5rem 1.2rem;
     }
 
-    .main-tasks ul li span {
+    /* .main-tasks ul li span {
         margin: 0rem 1rem;
-    }
+    } */
 
     input[type=text], .input-group-text {
         border-radius: 8rem;
