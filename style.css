@@ -308,7 +308,7 @@ input[type=text]::placeholder {
 @media (max-width: 992px) { 
 
     .right-corner img {
-        width: 15% !important;
+        width: 15%;
     }
     .main-tasks > div {
         padding: 1rem .8rem;
@@ -376,7 +376,58 @@ input[type=text]::placeholder {
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 767px) {
     /* Mobile Sidebar */
+    div.row.mt-5 {
+        position: relative;
+        top: .5rem;
+    }
+    .mobile-sidebar {
+        /* margin: 1rem 0rem; */
+        /* padding: 1rem; */
+        border-bottom: .05rem solid rgb(233, 233, 233);
+    }
+    .mobile-categories {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding-top: 1rem;
+    }
 
+    .mobile-categories li {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+        color: white;
+        font-weight: bold;
+        width: 3rem;
+        height: 3rem;
+        cursor: pointer;
+        box-shadow: 1px 1px 2px rgba(0, 0, 0,.2);
+        opacity: .5;
+        transition: all .3s;
+    }
+
+    .mobile-categories li:hover {
+        opacity: 1;
+        transition: all .3s ease-in-out;
+    }
+
+    .mobile-cat-shopping {
+        background-color: rgba(0,0,255);
+    }
+
+    .mobile-cat-work {
+        background-color: rgba(255, 165, 0);
+    }
+
+    .mobile-cat-hobbies {
+        background-color: green;
+    }
+
+    .mobile-cat-health {
+        background-color: purple;
+    }
     /* Bottom Navbar */
     .fixed-bottom {
         display: inline;
@@ -422,7 +473,7 @@ input[type=text]::placeholder {
     }
 
     .right-corner img {
-        width: 40% !important;
+        width: 25%;
     }
     .fixed-top h1 {
         font-size: 1.5rem;
@@ -454,7 +505,7 @@ input[type=text]::placeholder {
     }
 
     div.row.mt-5 {
-        margin-top: 2rem !important;
+        margin-top: 3.7rem !important;
     }
     .main-tasks div h3, .main-tasks div h3 i {
         font-size: 1.4rem !important;
@@ -548,6 +599,51 @@ input[type=text]::placeholder {
         font-size: .8rem;
     }
  } */
+
+ @media (max-width: 670px) { 
+    div.row.mt-5 {
+       position: relative;
+       top: 1.3rem;
+    }
+}
+
+@media (max-width: 500px) { 
+    div.row.mt-5 {
+       position: relative;
+       top: .2rem;
+    }
+}
+
+ @media (max-width: 425px) { 
+     div.row.mt-5 {
+        position: relative;
+        top: -1rem;
+     }
+     .right-corner img {
+        width: 35%;
+    }
+ }
+
+ @media (max-width: 375px) { 
+    div.row.mt-5 {
+       position: relative;
+       top: -1rem;
+    }
+    .right-corner img {
+        width: 35%;
+    }
+}
+
+    @media (max-width: 320px) { 
+        div.row.mt-5 {
+           position: relative;
+           top: -.9rem;
+        }
+
+        .right-corner img {
+            width: 40%;
+        }
+}
 
 
 
