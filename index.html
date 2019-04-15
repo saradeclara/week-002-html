@@ -14,13 +14,10 @@
 </head>
 
 <body>
-    <nav class="navbar fixed-top">
+    <nav class="main-navbar navbar sticky-top" id="main-navbar">
         <h1 class="d-flex align-items-center">
             <i class="fas fa-bars mr-3"></i>
-            <span class="red-h1">my</span>
-            tod
-            <i class="far fa-check-circle"></i>
-            <span class="red-h1">list</span>
+            <span>My ToDo List</span>
         </h1>
         <div class="right-corner w-25 d-flex justify-content-around align-items-center">
             <i class="fas fa-search"></i>
@@ -34,7 +31,9 @@
     <nav class="navbar fixed-bottom">
         <ul>
             <li>
-                <i class="fas fa-sync-alt"></i>
+                <a href="#main-navbar">
+                    <i class="fas fa-home"></i>
+                </a>
             </li>
             <li>
                 <i class="fas fa-search"></i>
@@ -73,13 +72,23 @@
         </nav> -->
 
     <div class="container-fluid">
-        <div class="row mt-5">
+        <div class="row">
             <nav class="mobile-sidebar col-sm-12">
                 <ul class="mobile-categories">
-                    <li class="mobile-cat-shopping">S</li>
-                    <li class="mobile-cat-work">W</li>
-                    <li class="mobile-cat-hobbies">H</li>
-                    <li class="mobile-cat-health">H</li>
+                    <li>
+                        <button type="button" class="btn btn-primary btn-sm">Shopping</button>
+                    </li>
+                    <li>
+                        <button type="button" class="btn btn-warning btn-sm">Work</button>
+                    </li>
+                    <li>
+                        <button type="button" class="btn btn-success btn-sm">Hobbies</button>
+                    </li>
+                    <li>
+                        <button type="button" class="btn btn-sm"
+                            style="background-color: purple; color: white;">Health</button>
+                    </li>
+
                 </ul>
             </nav>
             <nav class="col-md-3 bg-light sidebar sidebar-sticky">
@@ -177,8 +186,8 @@
                                         <p>
                                             <span class="badge pill badge-primary">Shopping</span>
                                         </p>
-                                    
-                                            
+
+
                                     </span>
                                     <i class="fas fa-trash"></i>
                                 </li>
@@ -207,7 +216,8 @@
                                     <i class="far fa-circle"></i>
                                     <span>Lorem ipsum dolor sit amet
                                         <p>
-                                            <span class="badge pill" style="background-color: var(--purple); color: white;">Health</span>
+                                            <span class="badge pill"
+                                                style="background-color: var(--purple); color: white;">Health</span>
                                         </p>
                                     </span>
                                     <i class="fas fa-trash"></i>
@@ -548,24 +558,24 @@
                         </div>
                         <label for="input2">Choose a category</label>
                         <div class="input-group-sm mb-2">
-                                <select class="custom-select" id="inputGroupSelect02">
-                                  <option value="1" selected>Shopping</option>
-                                  <option value="2">Work</option>
-                                  <option value="3">Hobbies</option>
-                                  <option value="4">Health</option>
-                                </select>
-                              
-                              </div>
-                              <label for="input3">This task is for...</label>
-                              <div class="input-group-sm mb-2">
-                                      <select class="custom-select" id="inputGroupSelect02">
-                                        <option value="1" selected>Today</option>
-                                        <option value="2">Tomorrow</option>
-                                        <option value="3">Next Week</option>
-                                        <option value="4">Next Month</option>
-                                      </select>
-                                    
-                                    </div>
+                            <select class="custom-select" id="inputGroupSelect02">
+                                <option value="1" selected>Shopping</option>
+                                <option value="2">Work</option>
+                                <option value="3">Hobbies</option>
+                                <option value="4">Health</option>
+                            </select>
+
+                        </div>
+                        <label for="input3">This task is for...</label>
+                        <div class="input-group-sm mb-2">
+                            <select class="custom-select" id="inputGroupSelect02">
+                                <option value="1" selected>Today</option>
+                                <option value="2">Tomorrow</option>
+                                <option value="3">Next Week</option>
+                                <option value="4">Next Month</option>
+                            </select>
+
+                        </div>
                     </div>
                 </div>
                 <!-- Modal Footer -->
