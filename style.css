@@ -208,6 +208,42 @@ div.main p {
 
 div.main h2 {
     font-weight: bold;
+    font-size: 1.5rem;
+    color: rgb(39, 39, 39);
+
+}
+
+.all-tasks ul {
+    width: 3rem;
+}
+.all-tasks li {
+    border-right: 1px solid rgba(0, 0, 0,.3);
+    padding: 0rem 1.5rem;
+    height: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(39, 39, 39);
+}
+
+.all-tasks li:hover {
+    cursor: pointer;
+    color: black;
+}
+
+.all-tasks li p {
+    font-size: .9rem;
+}
+
+.all-tasks li p:hover {
+}
+
+.all-tasks i {
+    font-size: .9rem;
+}
+
+li > p > i {
+    margin-right: .5rem;
 }
 
 .main-tasks > div {
