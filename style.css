@@ -225,10 +225,20 @@ ul.second-level li:hover {
 
 
 
+
+
 div.main {
     
     background-color: rgba(255,255,255,.5);
     background:url(round.png);
+}
+
+/* Badges */
+div.main p {
+    margin: 0rem;
+}
+div.main .badge {
+    margin: 0rem;
 }
 
 div.main h2 {
@@ -306,6 +316,11 @@ input[type=text]::placeholder {
 
 .done span {
     text-decoration: line-through;
+}
+
+.done span .badge {
+    text-decoration: none !important;
+    background-color: gray;
 }
 
 /* Bootstrap Responsive Breakpoints */
