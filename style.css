@@ -59,11 +59,8 @@ nav h1 {
     margin-bottom: 0;
 }
 
-h1 > i.fa-check-circle {
-    color: white;
-    font-size: 2rem;
-    position: relative;
-    top: .05rem;
+.main-navbar i:hover{
+    color: var(--primary-light);
 }
 
 .red-h1 {
