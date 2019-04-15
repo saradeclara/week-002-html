@@ -529,7 +529,7 @@ input[type=text]::placeholder {
 
 
 h4,
-modal-title { font-size: 18px !important; font-weight: bold; color: var(--primary-color);
+modal-title { font-size: 1.5rem !important; font-weight: bold; color: var(--primary-color);
 text-transform: uppercase }
 
 .no-borders { border: 0px; }
@@ -541,15 +541,18 @@ text-transform: uppercase }
 
 .modal-body label {
     font-weight: bold;
-    font-size: .7rem;
+    font-size: .9rem;
 }
 
 select#inputGroupSelect02.custom-select {
-    font-size: .7rem;
+    font-size: .8rem;
 }
 
+.modal-body input::placeholder {
+    font-size: 0.8rem;
+}
 i.fas.fa-check-circle::before {
-    font-size: 1rem;
+    font-size: 1.2rem;
     position: relative;
     bottom: .05rem;
 }
