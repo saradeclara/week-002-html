@@ -208,7 +208,7 @@ div.main p {
 
 div.main h2 {
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     color: rgb(39, 39, 39);
 
 }
@@ -232,10 +232,7 @@ div.main h2 {
 }
 
 .all-tasks li p {
-    font-size: .9rem;
-}
-
-.all-tasks li p:hover {
+    font-size: .8rem;
 }
 
 .all-tasks i {
@@ -392,7 +389,11 @@ input[type=text]::placeholder {
     }
  }
 
-
+ @media (max-width: 2500px) {
+    .right-corner img {
+        width: 2.3rem;
+    }
+ }
 
 
  @media (max-width: 1500px) {
@@ -527,12 +528,10 @@ input[type=text]::placeholder {
         display: none;
     }
 
-   
-
-    .main > .row h2 {
+    .main .row:nth-child(1) {
         display: none;
     }
-
+   
     div.row.mt-4 {
         margin-top: 0rem !important;
     }
