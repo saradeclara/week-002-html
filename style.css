@@ -89,7 +89,7 @@ h1 > i.fa-check-circle {
     color: white;
     font-size: 2rem;
     position: relative;
-    top: 0rem;
+    top: .05rem;
 }
 
 .red-h1 {
@@ -117,7 +117,7 @@ i {
 }
 
 .right-corner img {
-    height: 2.5rem;
+    width: 7%;
     border-radius: 100%;
     border: 2px solid white;
     box-shadow: 0px 0px 5px rgba(0,0,0,.5);
@@ -303,8 +303,79 @@ input[type=text]::placeholder {
 }
 
 /* Bootstrap Responsive Breakpoints */
+
+/* // Large devices (desktops, 992px and up) */
+@media (max-width: 992px) { 
+
+    .right-corner img {
+        width: 15% !important;
+    }
+    .main-tasks > div {
+        padding: 1rem .8rem;
+    }
+
+    .main-tasks > div h3, .main-tasks > div i {
+        font-size: 1.3rem;
+    }
+
+    .main-tasks > div li {
+        font-size: .8rem;
+    }
+
+    .main-tasks > div {
+        padding: 1.5rem 1.2rem;
+    }
+
+    .main-tasks ul li span {
+        margin: 0rem 1rem;
+    }
+
+    input[type=text], .input-group-text {
+        border-radius: 8rem;
+        font-size: .7rem;
+    }
+    
+    input[type=text]::placeholder {
+        border-color: rgb(201,201,201);
+        color: rgb(201, 201, 201);
+        font-size: .7rem;
+        }
+    
+    .input-group-text i {
+        font-size: .7rem !important;
+    }
+
+    ul.first-level h2 {
+        font-size: 1.1rem;
+    }
+
+    ul.first-level li h2 i {
+        font-size: 1.1rem;
+    }
+    ul.second-level li span {
+        font-size: .9rem;
+    }
+    ul.second-level li span i {
+        font-size: 1rem;
+    }
+ }
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) {
+    .right-corner img {
+        width: 12%;
+    }
+ }
+
+ @media (max-width: 1500px) {
+    .right-corner img {
+        width: 10%;
+    }
+ }
+
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 767px) {
+    /* Mobile Sidebar */
 
     /* Bottom Navbar */
     .fixed-bottom {
@@ -350,12 +421,15 @@ input[type=text]::placeholder {
         display: none !important;
     }
 
+    .right-corner img {
+        width: 40% !important;
+    }
     .fixed-top h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .fixed-top h1 i {
-        font-size: 1.6rem;
+        font-size: 0.8em;
         position: relative;
         top: -.05rem;
     }
@@ -372,7 +446,7 @@ input[type=text]::placeholder {
     }
 
     div.row.mt-4 {
-        margin-top: 1.5rem !important;
+        margin-top: 0rem !important;
     }
     .main {
         padding: 1rem !important;
@@ -474,64 +548,6 @@ input[type=text]::placeholder {
         font-size: .8rem;
     }
  } */
-
-/* // Large devices (desktops, 992px and up) */
-@media (max-width: 992px) { 
-    .main-tasks > div {
-        padding: 1rem .8rem;
-    }
-
-    .main-tasks > div h3, .main-tasks > div i {
-        font-size: 1.3rem;
-    }
-
-    .main-tasks > div li {
-        font-size: .8rem;
-    }
-
-    .main-tasks > div {
-        padding: 1.5rem 1.2rem;
-    }
-
-    .main-tasks ul li span {
-        margin: 0rem 1rem;
-    }
-
-    input[type=text], .input-group-text {
-        border-radius: 8rem;
-        font-size: .7rem;
-    }
-    
-    input[type=text]::placeholder {
-        border-color: rgb(201,201,201);
-        color: rgb(201, 201, 201);
-        font-size: .7rem;
-        }
-    
-    .input-group-text i {
-        font-size: .7rem !important;
-    }
-
-    ul.first-level h2 {
-        font-size: 1.1rem;
-    }
-
-    ul.first-level li h2 i {
-        font-size: 1.1rem;
-    }
-    ul.second-level li span {
-        font-size: .9rem;
-    }
-    ul.second-level li span i {
-        font-size: 1rem;
-    }
- }
-
-/* // Extra large devices (large desktops, 1200px and up) */
-/* @media (min-width: 1200px) {
- } */
-
-
 
 
 
