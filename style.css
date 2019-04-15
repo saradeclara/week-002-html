@@ -203,7 +203,7 @@ div.main p {
     margin: 0rem;
 }
 div.main .badge {
-    margin: 0rem;
+    margin: 0rem 2rem;
 }
 
 div.main h2 {
@@ -296,6 +296,9 @@ input[type=text]::placeholder {
 
 @media (max-width: 992px) { 
 
+    .sidebar p{
+        font-size: .7rem;
+    }
     .right-corner img {
         width: 15%;
     }
