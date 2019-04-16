@@ -117,7 +117,6 @@ ul.first-level li h2 i {
 }
 
 ul.second-level li span i {
-    margin-right: 2rem;
     font-size: 1rem;
 }
 
@@ -152,7 +151,6 @@ ul.second-level li {
 }
 
 ul.second-level li span {
-    margin-left: 2rem;
     font-size: .9rem;
 }
 
