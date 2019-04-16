@@ -287,6 +287,9 @@ body > div.container-fluid > div > div > div.row.mt-4 > div > div > ul > li > sp
 }
  */
 
+ .main-tasks ul li span {
+     text-align: center;
+ }
 
 
 .main-tasks .input-group {
