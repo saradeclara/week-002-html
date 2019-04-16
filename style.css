@@ -154,6 +154,12 @@ ul.second-level li span {
     font-size: .9rem;
 }
 
+ul.second-level li span:nth-child(2) {
+    font-size: .7rem;
+    display: flex;
+    align-items: center;
+}
+
 hr {
     margin: .5rem;
     padding: 0;
