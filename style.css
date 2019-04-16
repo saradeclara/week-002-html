@@ -321,15 +321,13 @@ input[type=text]::placeholder {
     color: rgb(160, 158, 158);
 }
 
-.done span {
+.done > span > span {
     text-decoration: line-through;
 }
 
-.done span .badge {
-    text-decoration: none !important;
+.done > span > p > span {
     background-color: gray;
 }
-
 @media (max-width: 992px) { 
 
     div.main h2 {
@@ -534,6 +532,7 @@ input[type=text]::placeholder {
     body > div.container-fluid > div > div > div:nth-child(1) {
         display: none;
     }
+
     div.row.mt-4 {
         margin-top: 0rem !important;
     }
