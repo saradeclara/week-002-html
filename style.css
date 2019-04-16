@@ -253,10 +253,6 @@ li > p > i {
     cursor: pointer;
 }
 
-body > div.container-fluid > div > div > div.row.mt-4 > div > div > ul > li > span {
-    margin: 0rem 1rem;
-}
-
 .main-tasks h3 {
     font-weight: bold;
     text-transform: uppercase;
@@ -272,7 +268,7 @@ body > div.container-fluid > div > div > div.row.mt-4 > div > div > ul > li > sp
 .main-tasks li {
     border: 1px solid rgb(235, 235, 235);
     margin: .7rem 0rem;
-    padding: .7rem;
+    /* padding: .7rem; */
     border-radius: .6rem;
     box-shadow: 1px 1px 3px rgba(0,0,0,.1);
     font-size: .9rem;
@@ -282,15 +278,15 @@ body > div.container-fluid > div > div > div.row.mt-4 > div > div > ul > li > sp
     font-size: .9rem;
 }
 
-/* .main-tasks ul li span {
-    margin: 0rem 1rem;
-}
- */
-
  .main-tasks ul li span {
      text-align: center;
  }
 
+ .main-tasks ul li i, .main-tasks ul li span {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
 
 .main-tasks .input-group {
     margin-top: 1.5rem;
@@ -535,10 +531,9 @@ input[type=text]::placeholder {
         display: none;
     }
 
-    .main .row:nth-child(1) {
+    body > div.container-fluid > div > div > div:nth-child(1) {
         display: none;
     }
-   
     div.row.mt-4 {
         margin-top: 0rem !important;
     }
